@@ -1,0 +1,10 @@
+/home/student/Documents/CIS400/repo/my-first-app/test_clang/test.c:6:12: warning: Dereference of null pointer (loaded from variable 'p')
+    return *p + 4;
+           ^~
+/home/student/Documents/CIS400/repo/my-first-app/test_clang/test.c:18:9: warning: Value stored to 'y' during its initialization is never read
+    int y = *z;
+        ^   ~~
+/home/student/Documents/CIS400/repo/my-first-app/test_clang/test.c:18:13: warning: Dereference of null pointer (loaded from variable 'z')
+    int y = *z;
+            ^~
+3 warnings generated.

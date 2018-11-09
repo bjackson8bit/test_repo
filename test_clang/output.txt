@@ -1,0 +1,4 @@
+test.c:5:34: warning: Dereference of null pointer (loaded from variable 'p')
+    printf("The number is %d\n", *p);
+                                 ^~
+1 warning generated.

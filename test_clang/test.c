@@ -2,6 +2,7 @@
 #include <string.h>
 #include "helper.h"
 
+// Dereference pointer without checking if NULL
 int helper2(int* p) {
     return *p + 4;
 }

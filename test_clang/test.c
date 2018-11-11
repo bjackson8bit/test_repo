@@ -15,7 +15,7 @@ int main(int argc, char* argv[]) {
     }
     printf("The number is %d\n", helper2(p));
 
-    int* z = NULL;
+    int* z = &x;
     int y = *z;
 
     return y;

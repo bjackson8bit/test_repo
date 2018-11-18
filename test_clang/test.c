@@ -8,6 +8,12 @@ int helper2(int* p) {
 }
 
 int main(int argc, char* argv[]) {
+    int y = 15;
+    int* k = &y;
+    if (argc >= 2 && strcmp(argv[1], "wow")) {
+        k = NULL;
+    }
+
     int x = 23;
     int* p = &x;
     if (argc >= 2 && strcmp(argv[1], "test")) {

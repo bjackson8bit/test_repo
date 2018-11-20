@@ -8,21 +8,22 @@ int helper2(int* p) {
 }
 
 int main(int argc, char* argv[]) {
-    int y = 15;
-    int* k = &y;
-    if (argc >= 2 && strcmp(argv[1], "wow")) {
-        k = NULL;
+    int num1 = 15;
+    int num2 = 20;
+
+    int* p1 = &num1;
+    int* p2 = &num2;
+
+    if (argc >= 2 && strcmp(argv[1], "wow") == 0) {
+        p1 = NULL;
     }
 
-    int x = 23;
-    int* p = &x;
-    if (argc >= 2 && strcmp(argv[1], "test")) {
-        p = NULL;
+    if (argc >= 2 && strcmp(argv[1], "test") == 0) {
+        p2 = NULL;
     }
-    printf("The number is %d\n", helper2(p));
 
-    int* z = &x;
-    int y = *z;
+    printf("num1 + 4 is %d\n", helper2(p1));
+    printf("num2 is %d\n", *p2);
 
-    return y;
+    return 0;
 }

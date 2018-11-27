@@ -2,8 +2,13 @@
 #include <string.h>
 #include "helper.h"
 
+int otherHelper(int* p) {
+    return *p - 5;
+}
+
 // Dereference pointer without checking if NULL
 int helper2(int* p) {
+    printf("wow\n");
     return *p + 4;
 }
 
@@ -22,8 +27,14 @@ int main(int argc, char* argv[]) {
         p2 = NULL;
     }
 
+    printf("amazing\n");
+
     printf("num1 + 4 is %d\n", helper2(p1));
-    printf("num2 is %d\n", *p2);
+    printf("num2 - 5 is %d\n", otherHelper(p2));
 
     return 0;
+
+    /* MAJOR PROBLEM WITH SYNTACTIC MASKING:
+        - Bugs in helper function calls
+    */
 }

@@ -3,7 +3,7 @@
 #include "helper.h"
 
 // Dereference pointer without checking if NULL
-int helper(int* p) {
+int helper2(int* p) {
     return *p + 4;
 }
 
@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
         p2 = NULL;
     }
 
-    printf("num1 + 4 is %d\n", helper(p1));
+    printf("num1 + 4 is %d\n", helper2(p1));
     printf("num2 is %d\n", *p2);
 
     return 0;

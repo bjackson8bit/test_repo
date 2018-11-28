@@ -2,6 +2,8 @@
 #include <string.h>
 #include "helper.h"
 
+// Comment for diff
+
 int otherHelper(int* p) {
     return *p - 5;
 }

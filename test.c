@@ -33,8 +33,4 @@ int main(int argc, char* argv[]) {
     printf("num2 - 5 is %d\n", otherHelper(p2));
 
     return 0;
-
-    /* MAJOR PROBLEM WITH SYNTACTIC MASKING:
-        - Bugs in helper function calls
-    */
 }

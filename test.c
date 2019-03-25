@@ -2,9 +2,6 @@
 #include <string.h>
 #include "helper.h"
 
-int otherHelper(int* p) {
-    return *p - 5;
-}
 
 // Dereference pointer without checking if NULL
 int helper2(int* p) {
@@ -30,7 +27,9 @@ int main(int argc, char* argv[]) {
     printf("amazing\n");
 
     printf("num1 + 4 is %d\n", helper2(p1));
-    printf("num2 - 5 is %d\n", otherHelper(p2));
+    printf("num2 - 5 is %d\n", *p2);
 
-    return 0;
+    int* p3 = NULL;
+
+    return *p3;
 }
